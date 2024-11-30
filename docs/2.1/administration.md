@@ -1,33 +1,33 @@
-# Administração
+# Administración
 
 ## Sistema
 
-Configuração global do sistema. Nesta seção é possível reiniciar todas as senhas (movendo-as para o histórico) e/ou apagar todos os dados de atendimento para um novo início do sistema.
+Configuración global del sistema. En esta sección es posible reiniciar todos los turnos (archivándolos en el historial) y/o eliminar todos los datos de atención para un nuevo inicio del sistema.
 
 ## Unidades
 
-Cadastro das unidade de atendimento do sistema. Unidade de atendimento é o local físico aonde os atendimentos são executados. Por exemplo: Uma unidade de saúde, um departamento de atendimento ao cliente, ou uma localidade.
+Registro de las unidades de atención del sistema. Unidad de atención es el lugar físico donde se realiza la atención. Por ejemplo: una unidad de salud, un departamento de atención al cliente, o un local comercial.
 
-## Serviços
+## Servicios
 
-Cadastro dos serviços que são realizados no sistema. O serviço é um cadastro global, podendo estar disponível ou não nas unidades cadastradas. Um mesmo serviço pode ser atendido em mais de uma unidade.
+Registro de los servicios que son realizados en el sistema. Se trata de un registro global, que puede estar disponible o no en las diferentes unidades registradas. Un mismo servicio puede ser atendido en más de una unidad.
 
-## Perfis
+## Perfiles
 
-Cadastro dos perfis de acesso ao sistema. Um perfil define quais módulos os usuários poderão acessar. O relacionamento do perfil com o usuário se dar através da `lotação`, que é a configuração de acesso de um usuário à uma `unidade` pelo `perfil` escolhido.
+Registro de los perfiles de aceso al sistema. Un perfil define a qué módulos tiene acceso cada usuario. Al usuario se le asigna un perfil a través de la `dotación`, que es la configuración de acceso de un usuario a una `unidad` para el `perfil` elegido.
 
 ## Prioridades
 
-Cadastro das prioridades de atendimento. Por padrão existem duas prioridades cadastradas: `Sem prioridade` e `Prioridade`. A prioridade possui um campo de `peso` que influencia na ordem da fila. Sendo por padrão `Sem prioridade` peso `0` e `Prioridade` peso `1`.
+Registro de las prioridades de atención. Por defecto existen dos prioridades registradas: `Sin prioridad` y `Prioridad`. Cada prioridad posee un campo `peso` que influye en el orden de la fila. Siendo por defecto `Sin prioridad` peso `0` y `Prioridad` peso `1`.
 
-## Locais
+## Locales
 
-Cadastro dos locais aonde o atendente realiza o seu atendimento. O local serve para orientar o cliente para que ele saiba para onde se dirigir quando for chamado. Por exemplo: Guichê, sala, mesa.
+Registro de los lugares desde donde el agente realiza su atención. El local sirve para orientar al cliente, indicándole hacia dónde debe dirigirse al ser llamado. Por ejemplo: consultorio, puesto, caja.
 
 ## Módulos
 
-Visualização dos módulos disponíveis. É possível habilitar e desabilitar os módulos instalados.
+Visualización de los módulos disponibles. Es posible habilitar o desabilitar los módulos instalados.
 
 ## Web API
 
-Cadastro dos clientes `OAuth2` para integração com outras aplicações via API web do sistema.
+Registro de los clientes `OAuth2` para la integración con otras aplicaciones a través de la API web del sistema.
