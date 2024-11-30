@@ -1,89 +1,89 @@
-# Guia de contribuição
+# Guía de contribución
 
-Há várias formas de contribuir para o NovoSGA:
+Hay varias formas de contribuir con NovoSGA:
 
 ## Reportando Problemas
 
-- Acesse a seção Issues do repositório.
-- Verifique se o problema já foi reportado para evitar duplicidade.
-- Forneça o máximo de informações possível sobre o problema, incluindo:
-    - Versão do NovoSGA
-    - Sistema operacional e versão do PHP
-    - Passos para reproduzir o problema
-    - Logs e screenshots, se possível
+- Ingrese a la sección Issues del repositorio.
+- Verifique si el problema ya fue reportado para evitar duplicados.
+- Ofrezca el máximo de información posible sobre el problema, incluyendo:
+    - Versión de NovoSGA
+    - Sistema operativo y versión de PHP
+    - Pasos para reproducir el problema
+    - Logs y screenshots, si es posible
 
 
-## Sugestões de Melhorias e Funcionalidades
+## Sugerencias de Mejoras y Funciones
 
-Se você tiver ideias para novas funcionalidades ou melhorias, abra uma Issue de sugestão com uma descrição detalhada. Discuta sua ideia com a comunidade para alinhamento antes de iniciar o desenvolvimento.
+Se usted tiene alguna idea de nuevas funcionalidades o mejoras, habra una Issue de sugerencia con una descripción detallada. Discuta su idea con la comunidad para ponerse de acuerdo antes de iniciar el desarrollo.
 
 
-## Respondendo dúvidas
+## Respondiendo dudas
 
-Ajude outros usuários respondendo dúvidas de uso ou sobre instalação do sistema.
+Ayude a otros usuarios respondiendo dudas sobre el uso o la instalación del sistema.
 
-- [Fórum de discussão](https://discuss.novosga.org/)
-- [Grupo do Telegram](https://t.me/novosga)
+- [Foro de discusión](https://discuss.novosga.org/)
+- [Grupo de Telegram](https://t.me/novosga)
 
-## Documentação
+## Documentación
 
-Sentiu falta de alguma informação importante do sistema, ou uma falta de clareza na documentação do Novo SGA? Ajude a tornar nossa documentação mais clara e abrangente.
+Cree que falta alguna información importante sobre el sistema, o falta claridad en la documentación de Novo SGA? Ayude a vovler nuestra documentación más clara e integral.
 
-Ao final de cada página há um link para realizar a edição da mesma. Caso deseja solicitar uma nova seção, basta abrir um novo Pull Request para o repositório abaixo:
+Al final de cada página hay un link para realizar la edición de la misma. En caso que desee solicitar una nueva sección, basta con abrir un nuevo Pull Request en el siguiente repositorio:
 
 https://github.com/novosga/novosga.github.io/
 
-Toda documentação fica no caminho `/docs`.
+Toda la documentación queda en la ruta `/docs`.
 
 
-## Desenvolvimento
+## Desarrollo
 
-### Pré-requisitos
+### Pre-requisitos
 
-Para começar, verifique se você possui os seguintes pré-requisitos:
+Para comenzar, verifique si posee los siguientes pre-requisitos:
 
-- **Git**: para controle de versão
-- **Composer**: para gerenciar dependências PHP
-- **PHP**: verifique a versão definida no arquivo `composer.json`
+- **Git**: para control de versión
+- **Composer**: para gestionar dependencias PHP
+- **PHP**: verifique la versión definida en el archivo `composer.json`
 
-### Processo de Contribuição
+### Proceso de Contribución
 
 #### 1. Crie o fork do repositório
 
-Clique em "Fork" na página do [NovoSGA](https://github.com/novosga/novosga) para criar uma cópia do repositório em sua conta do GitHub.
+Haga click en "Fork" en la página de [NovoSGA](https://github.com/novosga/novosga) para crear una copia del repositorio en su cuenta de GitHub.
 
-#### 2. Clone o repositório Forkado
+#### 2. Clone el repositorio Forkado
 
-Clone o repositório para sua máquina local usando o seguinte comando:
+Clone el repositorio en su máquina local usando el siguiente comando:
 
 ```bash
 git clone https://github.com/seu-usuario/novosga.git
 cd novosga
 ```
 
-#### 3. Crie um branch
+#### 3. Cree un branch
 
-Use branches para cada alteração ou melhoria. O nome do branch deve ser descritivo para o que está sendo feito:
+Use branches para cada alteración o mejora. El nombre del branch debe ser descriptivo sobre lo que está sendo feito:
 
 ```bash
-git checkout -b minha-contribuicao
+git checkout -b mi-contribución
 ```
 
-#### 4. Instale dependências
+#### 4. Instale dependencias
 
-Certifique-se de que todas as dependências estão instaladas.
+Asegúrese que todas las dependencias están instaladas.
 
 ```bash
 composer install
 ```
 
-#### 5. Implemente as alterações
+#### 5. Implemente los cambios
 
-Faça as alterações necessárias no código e escreva testes que cubram as funcionalidades adicionadas ou os bugs corrigidos. Certifique-se de que o código esteja limpo, documentado e que siga as práticas de clean code.
+Haga los cambios necesarios en el código y escriba testeos que cubran las funcionalidades añadidas o los bugs corregidos. Compruebe que el código esté limpio, documentado y que siga las prácticas de clean code.
 
-#### 6. Execute os testes e análises do código
+#### 6. Ejecute los test y análisis de código
 
-Antes de enviar suas alterações, execute todos os testes para garantir que tudo esteja funcionando corretamente.
+Antes de enviar sus modificaciones, ejecute todos los testeos para garantizar que todo esté funcionando correctamente.
 
 ```bash
 ./vendor/bin/phpunit
@@ -91,47 +91,46 @@ Antes de enviar suas alterações, execute todos os testes para garantir que tud
 ./vendor/bin/phpstan --memory-limit=1g
 ```
 
-#### 7. Faça o commit das mudanças
+#### 7. Haga el commit de los cambios
 
-Escreva mensagens de commit claras e concisas. Use o seguinte padrão para mensagens de commit:
+Escriba mensajes de commit claros y concisos. Use el siguiente modelo para mensajes de commit:
 
-- `feat:` Para novas funcionalidades
-- `fix:` Para correção de bugs
-- `docs:` Para mudanças na documentação
-- `style:` Ajustes de formatação e estilo
-- `refactor:` Refatoração de código
-- `test:` Adição ou modificação de testes
-
-```bash
-git commit -m "fix: corrigido bug na autenticação de usuários"
-```
-
-#### 8. Envie suas alterações
-
-Envie suas alterações para seu repositório GitHub:
+- `feat:` Para nuevas funcionalidades
+- `fix:` Para corrección de bugs
+- `docs:` Para cambios en la documentación
+- `style:` Ajustes de formato y estilo
+- `refactor:` Refactorización de código
+- `test:` Adición o modificación de test
 
 ```bash
-git push origin minha-contribuicao
+git commit -m "fix: corregido bug en la autenticación de usuarios"
 ```
 
-#### 9. Crie um Pull Request
+#### 8. Envíe sus modificaciones
+Envíe sus modificaciones para su repositorio GitHub:
 
-No GitHub, vá até o seu repositório forkado e clique em New Pull Request. Descreva claramente a mudança e inclua referências a quaisquer issues relacionadas.
+```bash
+git push origin mi-contribución
+```
 
-> Exemplo de descrição: "Este PR resolve o problema #123 e implementa a funcionalidade de login via autenticação OAuth.
+#### 9. Cree un Pull Request
+
+En GitHub, vaya hasta su repositorio forkado y cliquee en New Pull Request. Describa claramente el cambio e incluya referencias a cualquier issue relacionada.
+
+> Ejemplo de descripción: "Este PR resuelve el problema #123 e implementa la funcionalidad de login via autenticación OAuth."
 
 ### Normas de código
 
-Para manter um código consistente, siga estas normas de estilo:
+Para mantener un código consistente, siga estas normas de estilo:
 
-- Use PSR-12 como padrão para formatação do PHP.
-- Nomeie variáveis e métodos de forma clara e descritiva.
-- Evite duplicação de código.
-- Adicione documentação para classes, métodos e funções complexas.
+- Use PSR-12 como estilo de formato en PHP.
+- Nombre las variables y métodos de forma clara y descriptiva.
+- Evite duplidos de código.
+- Añada documentación para clases, métodos y funciones complejas.
 
-### Revisão de Pull Request
+### Revisión de Pull Request
 
-Os mantenedores do NovoSGA revisarão seu Pull Request e poderão sugerir mudanças. Lembre-se:
+Los administradores de NovoSGA revisarán su Pull Request y podrán sugerir cambios. Recuerde:
 
-- Seja receptivo ao feedback.
-- Esteja disposto a discutir sua implementação.
+- Sea receptivo del feedback.
+- Esté dispuesto a discutir su implementación.
