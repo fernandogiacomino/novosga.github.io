@@ -27,7 +27,7 @@ Ayude a otros usuarios respondiendo dudas sobre el uso o la instalación del sis
 
 ## Documentación
 
-Cree que falta alguna información importante sobre el sistema, o falta claridad en la documentación de Novo SGA? Ayude a vovler nuestra documentación más clara e integral.
+¿Cree que falta alguna información importante sobre el sistema, o falta claridad en la documentación de Novo SGA? Ayude a volver nuestra documentación más clara e integral.
 
 Al final de cada página hay un link para realizar la edición de la misma. En caso que desee solicitar una nueva sección, basta con abrir un nuevo Pull Request en el siguiente repositorio:
 
